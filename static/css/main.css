@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&family=Poppins:wght@200;400;500;600&display=swap");
 /* NAVBAR */
 * {
   padding: 0;
@@ -17,13 +17,13 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--dark);
+  background: #fff;
   color: var(--pure);
 }
 
 .container {
   width: 1152px;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -228,7 +228,7 @@ nav ul.dropdown-list {
 
 /* #########  COROUSEL  ######### */
 .carousel {
-  min-height: 50vh;
+  min-height: 63vh;
   display: grid;
   grid-template-rows: 1fr 3fr 1.5fr;
   grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
@@ -466,6 +466,7 @@ nav ul.dropdown-list {
 /* ####### COUNTER STYLES ######### */
 
 .counter-content {
+  margin-top: -2.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -474,6 +475,7 @@ nav ul.dropdown-list {
 }
 
 .counter-value {
+  font-family: "Bitter", serif;
   font-size: 5rem;
   display: block;
   font-weight: bold;
@@ -487,4 +489,253 @@ nav ul.dropdown-list {
 }
 .process {
   color: #138808;
+}
+
+.counter-content p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #80837e;
+}
+
+/* #### FOOTER SECTION  ##### */
+.footer {
+  width: 90%;
+  padding: 1rem 0;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-footer .copyright-text {
+  font-size: 0.8em;
+  color: #80837e;
+  margin-left: 50%;
+  padding: 1rem 0;
+  transform: translateX(-20%);
+}
+
+.footer .left-footer ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .left-footer ul li {
+  list-style: none;
+}
+
+.footer .left-footer ul li a {
+  text-decoration: none;
+  color: #434343;
+}
+.footer .left-footer ul li:hover a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer .right-footer {
+  gap: 1rem;
+}
+
+hr {
+  background-color: #324234;
+}
+
+/*  #### NEWS FEED SECTION  #### */
+.feed-section {
+  height: 80vh;
+  box-shadow: 60px -16px #138808;
+  background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.623)),
+    url("https://cdn.shopify.com/s/files/1/0557/4331/6157/articles/TF_What_Is_Darjeeling_HERO_V3_2880x1512_d72eecbe-c914-4fe3-8325-11366b7ee396_2880x.jpg?v=1630469144");
+  padding: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  border-radius: 2rem;
+  margin: 0 auto;
+  align-items: center;
+}
+.feed-section .register-section {
+  display: flex;
+  flex-direction: column;
+  /* align-items: space-around; */
+  justify-content: space-between;
+}
+
+.feed-section .register-section .register-text {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.feed-section .register-section button {
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+  background-color: #138808;
+}
+
+.feed-section .register-section button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.feed-section .newsfeed .news-wrapper {
+  border: none;
+  border-radius: 0.6rem;
+  color: #fff;
+  padding: 3rem;
+}
+
+.feed-section .newsfeed .news-wrapper ul li {
+  background-color: rgba(14, 13, 14, 0.6);
+  color: rgb(225, 225, 225);
+  padding: 1rem 0.8rem;
+  list-style: none;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.feed-section .newsfeed .news-wrapper ul li p {
+  margin-bottom: 1rem;
+}
+
+.feed-section .newsfeed .news-wrapper h2 {
+  margin-bottom: 1rem;
+}
+
+.feed-section .newsfeed .news-wrapper ul li a {
+  text-decoration: none;
+  border: none;
+  border-radius: 0.3rem;
+  color: #fff;
+  background-color: #138808;
+  padding: 0.3rem 0.6rem;
+}
+
+/* ###### ABOUT PAGE ########### */
+.abt-main-content {
+  color: #5d5d5d;
+}
+
+.abt-main-content .about-img {
+  width: 100%;
+  height: 40vh;
+  background-image: url("https://cdn.shopify.com/s/files/1/0155/8131/products/0X2A0055_b6675848-0fe1-4869-b282-b313045b34af_2000x.jpg?v=1647937248");
+  background-size: cover;
+}
+
+.abt-main-content .about-content .about-title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.abt-main-content .about-content .center-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.abt-main-content .about-content .center-content .about-title-2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ###### FAQ PAGE ########### */
+
+.faq-container {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid #03b5d2;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded="true"] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 15em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 2em 0;
 }
