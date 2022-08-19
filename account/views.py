@@ -20,4 +20,7 @@ def contact(request):
     	return render(request, 'account/contact.html')
  
 def faq(request):
-	return render(request, 'account/faq.html')
+    	return render(request, 'account/faq.html')
+ 
+def login(request):
+	return render(request, 'account/login.html')
